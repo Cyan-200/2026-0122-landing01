@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
+  base: '/2026-0122-landing01/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
