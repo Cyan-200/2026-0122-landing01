@@ -1,0 +1,7 @@
+export { Nav } from './nav'
+export { Hero } from './hero'
+export { CollectionPreview } from './collection-preview'
+export { BrandStatement } from './brand-statement'
+export { TechnologyTeaser } from './technology-teaser'
+export { ClosingVisual } from './closing-visual'
+export { Footer } from './footer'
