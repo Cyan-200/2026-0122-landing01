@@ -129,17 +129,6 @@ export default function CollectionPage() {
         }}
       />
 
-      {/* Grid pattern overlay */}
-      <div
-        className="fixed inset-0 pointer-events-none opacity-20 z-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, #E8E8E8 1px, transparent 1px),
-            linear-gradient(to bottom, #E8E8E8 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      />
 
       <Nav />
 
