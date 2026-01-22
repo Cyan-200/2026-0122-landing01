@@ -21,20 +21,17 @@ interface ProductCardProps {
   product: Product
   index: number
   onClick: () => void
-  large?: boolean
 }
 
-export function ProductCard({ product, index, onClick, large = false }: ProductCardProps) {
+export function ProductCard({ product, index, onClick }: ProductCardProps) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 30, scale: 0.98 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.12 }}
+      transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.08 }}
       onClick={onClick}
-      className={`group relative border border-border hover:border-foreground transition-colors duration-200 bg-transparent cursor-pointer ${
-        large ? 'row-span-2' : ''
-      }`}
+      className="group relative border border-border hover:border-foreground transition-colors duration-200 bg-transparent cursor-pointer"
       role="button"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && onClick()}
