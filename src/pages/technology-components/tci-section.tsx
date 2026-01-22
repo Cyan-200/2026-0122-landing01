@@ -2,16 +2,17 @@ import { useRef, useEffect, useState } from 'react'
 import { motion } from 'motion/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { getAssetPath } from '@/lib'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const products = [
-  { name: 'Arctic Parka', tci: 9.2, image: '/images/products/arctic-parka.jpg' },
-  { name: 'Summit Coat', tci: 8.5, image: '/images/products/summit-coat.jpg' },
-  { name: 'Transit Jacket', tci: 7.0, image: '/images/products/transit-jacket.jpg' },
-  { name: 'Boardroom Blazer', tci: 6.8, image: '/images/products/boardroom-blazer.jpg' },
-  { name: 'Metro Vest', tci: 5.5, image: '/images/products/metro-vest.jpg' },
-  { name: 'Altitude Shell', tci: 4.5, image: '/images/products/altitude-shell.jpg' },
+  { name: 'Arctic Parka', tci: 9.2, image: getAssetPath('/images/products/arctic-parka.jpg') },
+  { name: 'Summit Coat', tci: 8.5, image: getAssetPath('/images/products/summit-coat.jpg') },
+  { name: 'Transit Jacket', tci: 7.0, image: getAssetPath('/images/products/transit-jacket.jpg') },
+  { name: 'Boardroom Blazer', tci: 6.8, image: getAssetPath('/images/products/boardroom-blazer.jpg') },
+  { name: 'Metro Vest', tci: 5.5, image: getAssetPath('/images/products/metro-vest.jpg') },
+  { name: 'Altitude Shell', tci: 4.5, image: getAssetPath('/images/products/altitude-shell.jpg') },
 ]
 
 const scaleLabels = [

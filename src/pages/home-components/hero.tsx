@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { getAssetPath } from '@/lib'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -37,7 +38,7 @@ export function Hero() {
         className="absolute inset-0 -top-[10%] h-[120%]"
       >
         <img
-          src="/images/hero.jpg"
+          src={getAssetPath('/images/hero.jpg')}
           alt="SKYPEOPLE Outerwear"
           className="w-full h-full object-cover grayscale-[30%]"
         />

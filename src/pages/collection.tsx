@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Nav, Footer } from './home-components'
 import { CollectionHero, ProductGrid, ProductModal, type Product } from './collection-components'
+import { getAssetPath } from '@/lib'
 
 // Sample product data
 const products: Product[] = [
@@ -9,10 +10,10 @@ const products: Product[] = [
     name: 'Arctic Parka',
     price: 7800,
     tci: 9.2,
-    image: '/images/products/arctic-parka.jpg',
+    image: getAssetPath('/images/products/arctic-parka.jpg'),
     gallery: [
-      '/images/products/arctic-parka-2.jpg',
-      '/images/products/arctic-parka-3.jpg',
+      getAssetPath('/images/products/arctic-parka-2.jpg'),
+      getAssetPath('/images/products/arctic-parka-3.jpg'),
     ],
     specs: {
       material: 'Pertex® Quantum Pro',
@@ -28,9 +29,9 @@ const products: Product[] = [
     name: 'Summit Coat',
     price: 6500,
     tci: 8.5,
-    image: '/images/products/summit-coat.jpg',
+    image: getAssetPath('/images/products/summit-coat.jpg'),
     gallery: [
-      '/images/products/summit-coat-2.jpg',
+      getAssetPath('/images/products/summit-coat-2.jpg'),
     ],
     specs: {
       material: 'Pertex® Shield',
@@ -46,9 +47,9 @@ const products: Product[] = [
     name: 'Transit Jacket',
     price: 4800,
     tci: 7.0,
-    image: '/images/products/transit-jacket.jpg',
+    image: getAssetPath('/images/products/transit-jacket.jpg'),
     gallery: [
-      '/images/products/transit-jacket-2.jpg',
+      getAssetPath('/images/products/transit-jacket-2.jpg'),
     ],
     specs: {
       material: 'Pertex® Quantum',
@@ -64,9 +65,9 @@ const products: Product[] = [
     name: 'Metro Vest',
     price: 3200,
     tci: 5.5,
-    image: '/images/products/metro-vest.jpg',
+    image: getAssetPath('/images/products/metro-vest.jpg'),
     gallery: [
-      '/images/products/metro-vest-2.jpg',
+      getAssetPath('/images/products/metro-vest-2.jpg'),
     ],
     specs: {
       material: 'Pertex® Quantum',
@@ -82,9 +83,9 @@ const products: Product[] = [
     name: 'Boardroom Blazer',
     price: 5500,
     tci: 6.8,
-    image: '/images/products/boardroom-blazer.jpg',
+    image: getAssetPath('/images/products/boardroom-blazer.jpg'),
     gallery: [
-      '/images/products/boardroom-blazer-2.jpg',
+      getAssetPath('/images/products/boardroom-blazer-2.jpg'),
     ],
     specs: {
       material: 'Silent Nylon™ + PrimaLoft®',
@@ -100,9 +101,9 @@ const products: Product[] = [
     name: 'Altitude Shell',
     price: 4200,
     tci: 4.5,
-    image: '/images/products/altitude-shell.jpg',
+    image: getAssetPath('/images/products/altitude-shell.jpg'),
     gallery: [
-      '/images/products/altitude-shell-2.jpg',
+      getAssetPath('/images/products/altitude-shell-2.jpg'),
     ],
     specs: {
       material: 'Pertex® Shield Pro',

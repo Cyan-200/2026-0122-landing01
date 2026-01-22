@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { getAssetPath } from '@/lib'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -45,7 +46,7 @@ export function ClosingVisual() {
         className="absolute inset-0 -top-[10%] h-[120%]"
       >
         <img
-          src="/images/closing.jpg"
+          src={getAssetPath('/images/closing.jpg')}
           alt="SKYPEOPLE"
           className="w-full h-full object-cover grayscale-[30%]"
         />

@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
+import { getAssetPath } from '@/lib'
 
 const collectionItems = [
   {
     id: 1,
-    image: '/images/collection-1.jpg',
+    image: getAssetPath('/images/collection-1.jpg'),
   },
   {
     id: 2,
-    image: '/images/collection-2.jpg',
+    image: getAssetPath('/images/collection-2.jpg'),
   },
   {
     id: 3,
-    image: '/images/collection-3.jpg',
+    image: getAssetPath('/images/collection-3.jpg'),
   },
 ]
 
