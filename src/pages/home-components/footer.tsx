@@ -36,7 +36,7 @@ export function Footer() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6 }}
       data-section="footer"
-      className="bg-foreground text-background"
+      className="relative z-50 bg-foreground text-background"
     >
       {/* Top border */}
       <div className="h-px bg-border-dark" />
