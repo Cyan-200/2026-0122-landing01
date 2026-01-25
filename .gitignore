@@ -26,3 +26,8 @@ tsconfig.tsbuildinfo
 .env
 .env.local
 .env.*.local
+
+# Claude
+CLAUDE.md
+PRD/
+.claude/
